@@ -27,34 +27,11 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
+import Header from "@/components/header/header";
 
 export default function signup() {
   return (<>
-    <header className="bg-gray-900 px-4 py-3 shadow dark:bg-gray-950">
-      <div className="container mx-auto flex items-center justify-between">
-        <Link className="flex items-center space-x-2 text-white" href="#">
-          <MountainIcon className="h-6 w-6" />
-          <span>{`IfIf}`}</span>
-        </Link>
-        <nav className="hidden space-x-4 md:flex">
-          <Link className="text-gray-300 hover:text-white" href="#">
-            Home
-          </Link>
-          <Link className="text-gray-300 hover:text-white" href="#">
-            About
-          </Link>
-          <Link className="text-gray-300 hover:text-white" href="#">
-            Services
-          </Link>
-          <Link className="text-gray-300 hover:text-white" href="#">
-            Contact
-          </Link>
-        </nav>
-        <Button className="hidden md:inline-flex" variant="primary">
-          Sign Up
-        </Button>
-      </div>
-    </header>
+    <Header/>
     <div
       className="flex min-h-[100dvh] items-center justify-center bg-gray-100 px-4 py-12 dark:bg-gray-950">
       <div className="mx-auto w-full max-w-md space-y-8">
